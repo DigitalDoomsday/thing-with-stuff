@@ -62,7 +62,7 @@ frame.Parent = _12952456875486445983783452227635151277232954895541
 
 local title = Instance.new("TextLabel")
 title.Font = Enum.Font.FredokaOne
-title.Text = "top 5 reasons why i hate noobs"
+title.Text = "top 6 reasons why i hate noobs"
 title.TextColor3 = Color3.new(0, 0, 0)
 title.TextSize = 14
 title.BackgroundColor3 = Color3.new(0, 0.784314, 1)
