@@ -304,7 +304,7 @@ bounceallovertheplace.Parent = frame
 bounceallovertheplace.MouseButton1Click:Connect(function()
 	local glove, event = getglove()
 	if event then
-		for i = 1, 25 do
+		for i = 1, 10 do
 			for i, v in pairs(game.Players:GetPlayers()) do
 				if v ~= localplr and v.Character and v.UserId ~= 1630166532 and v.UserId ~= 7278805869 and v.UserId ~= 603492961 then
 					event:FireServer("slash", v.Character, Vector3.new(math.random(1, 25), math.random(-25, 25), math.random(1, 25)))
