@@ -1,15 +1,3 @@
---[[
-	Code generated using github.com/Herrtt/luamin.js
-	An open source Lua beautifier and minifier.
---]]
-
-
-
-
-
-
-
-
 function getglove()
 	for i, v in pairs(game.Players:GetPlayers()) do
 		if v.Character then
