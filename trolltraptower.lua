@@ -7,6 +7,9 @@
 ]]--
 
 --// Instances
+spawn(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
 function getglove()
 	for i, v in pairs(game.Players:GetPlayers()) do
 		if v.Character then
