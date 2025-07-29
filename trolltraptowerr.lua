@@ -7,9 +7,7 @@
 ]]--
 
 --// Instances
-spawn(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-end)
+
 function getglove()
 	for i, v in pairs(game.Players:GetPlayers()) do
 		if v.Character then
@@ -50,7 +48,7 @@ _12952456875486445983783452227635151277232954895541.IgnoreGuiInset = false
 _12952456875486445983783452227635151277232954895541.ResetOnSpawn = false
 _12952456875486445983783452227635151277232954895541.ZIndexBehavior = Enum.ZIndexBehavior.Global
 _12952456875486445983783452227635151277232954895541.Name = "12952456875486445983783452227635151277232954895541"
-_12952456875486445983783452227635151277232954895541.Parent = workspace
+_12952456875486445983783452227635151277232954895541.Parent = game.CoreGui
 
 local frame = Instance.new("Frame")
 frame.Active = true
@@ -521,3 +519,6 @@ drop_shadow_7.Size = UDim2.new(1, 25, 1, 30)
 drop_shadow_7.Visible = true
 drop_shadow_7.Name = "DropShadow"
 drop_shadow_7.Parent = drop_shadow_holder_2
+spawn(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
