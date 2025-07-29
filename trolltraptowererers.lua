@@ -59,7 +59,7 @@ frame.Position = UDim2.new(0.330529869, 0, 0.31898731, 0)
 frame.Size = UDim2.new(0, 402, 0, 228)
 frame.Visible = true
 frame.Parent = _12952456875486445983783452227635151277232954895541
-
+drag(frame)
 local title = Instance.new("TextLabel")
 title.Font = Enum.Font.FredokaOne
 title.Text = "top 6 reasons why i hate noobs"
