@@ -15,7 +15,6 @@ function getglove()
 			end
 		end
 	end
-	-- last resort (do gloves even work in replicatedstorage?? probably not, scripts cant run there.
 	for i, v in pairs(game.ReplicatedStorage:GetDescendants()) do
 		if v:IsA("Tool") and (string.find(v.Name:lower(), "glove") or string.find(v.Name:lower(), "slap")) and v:FindFirstChild("FlightSpeed") and v:FindFirstChild("Power") and v:FindFirstChild("Event") then
 			return v, v.Event
@@ -23,8 +22,8 @@ function getglove()
 	end
 end 
 drag = nil
-if drag == nil then -- your executor actually sucks if the script has to do this
-	drag = function(f) -- the drag loadstring is way longer than this function, this one is just a crappy replacement
+if drag == nil then
+	drag = function(f)
 		if f then
 			f.Active = true
 			f.Draggable = true
@@ -156,7 +155,7 @@ antislap.Name = "Anti slap"
 antislap.Parent = frame
 local green = Color3.new(0, 0.976806, 0)
 local red = Color3.new(0, 0.976806, 0)
-local twininfo = TweenInfo.new(1, -- the fucking timeEnum.EasingStyle.Quad, -- easing the fucking styleEnum.EasingDirection.Out, -- easing the fucking direction0, -- how many fucking times to repeatfalse, -- reverse the fucking tween/twin0-- how long do you want it to fucking delay)
+local twininfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 0)
 local twinservice = game:GetService("TweenService")
 local twingreen = twinservice:Create(antislap, twininfo, {
 	BackgroundColor3 = green
