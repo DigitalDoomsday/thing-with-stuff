@@ -50,7 +50,7 @@ frame.Parent = thegui
 drag(frame)
 local title = Instance.new("TextLabel")
 title.Font = Enum.Font.FredokaOne
-title.Text = "Troll Trap Tower"
+title.Text = "top 5 reasons why i hate noobs"
 title.TextColor3 = Color3.new(0, 0, 0)
 title.TextSize = 14
 title.BackgroundColor3 = Color3.new(0, 0.784314, 1)
